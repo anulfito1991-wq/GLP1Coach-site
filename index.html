@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GLP-1 Coach: Shots &amp; Plateaus</title>
+  <meta name="description" content="A private, on-device GLP-1 tracker and Apple Intelligence coach for Ozempic, Mounjaro, Wegovy, Zepbound, and Rybelsus users." />
+  <link rel="canonical" href="https://anulfito1991-wq.github.io/GLP1Coach-site/" />
+  <style>
+    :root {
+      --bg-top: #0e0d0b;
+      --bg-bot: #050403;
+      --gold: #f0d89e;
+      --gold-soft: #fff0c8;
+      --ink: #e9e6df;
+      --ink-dim: #a7a39b;
+      --border: rgba(240, 216, 158, 0.18);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: linear-gradient(180deg, var(--bg-top), var(--bg-bot));
+      color: var(--ink);
+      font: 17px/1.6 -apple-system, "SF Pro Text", system-ui, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 80px 24px 96px; }
+    header { text-align: center; margin-bottom: 64px; }
+    .mark {
+      width: 88px; height: 88px; margin: 0 auto 24px; border-radius: 22px;
+      background: radial-gradient(circle at 50% 30%, #1a1816, #050403);
+      display: grid; place-items: center;
+      box-shadow: 0 8px 40px rgba(240, 216, 158, 0.08);
+    }
+    .mark svg { width: 64px; height: 64px; }
+    h1 { font: 600 36px/1.15 -apple-system, "SF Pro Display", sans-serif; letter-spacing: -0.02em; }
+    h1 .accent { color: var(--gold); }
+    .tagline { color: var(--ink-dim); margin-top: 14px; font-size: 19px; }
+    nav { margin-top: 28px; display: flex; gap: 18px; justify-content: center; }
+    nav a {
+      color: var(--gold); text-decoration: none; font-weight: 500;
+      padding: 10px 18px; border: 1px solid var(--border); border-radius: 999px;
+      transition: background 0.2s;
+    }
+    nav a:hover { background: rgba(240, 216, 158, 0.08); }
+    section { margin-top: 56px; }
+    section h2 {
+      font: 600 22px/1.2 -apple-system, "SF Pro Display", sans-serif;
+      letter-spacing: -0.01em; color: var(--gold-soft); margin-bottom: 14px;
+    }
+    p, li { color: var(--ink-dim); }
+    p + p, ul + p { margin-top: 12px; }
+    ul { list-style: none; padding: 0; }
+    ul li {
+      padding: 10px 0 10px 26px; border-bottom: 1px solid rgba(255,255,255,0.04);
+      position: relative;
+    }
+    ul li::before {
+      content: "·"; color: var(--gold); position: absolute; left: 8px; top: 6px;
+      font-size: 22px; font-weight: 700;
+    }
+    ul li:last-child { border-bottom: none; }
+    footer {
+      margin-top: 96px; padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      text-align: center; color: var(--ink-dim); font-size: 13px;
+    }
+    footer p + p { margin-top: 8px; }
+    a.inline { color: var(--gold); text-decoration: none; }
+    a.inline:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="38%" r="20%">
+              <stop offset="0%" stop-color="#fff0c8" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#fff0c8" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <path d="M18,66 Q50,18 82,66" stroke="#f0d89e" stroke-width="5.2" stroke-linecap="round" fill="none"/>
+          <circle cx="50" cy="38" r="11" fill="url(#glow)"/>
+          <circle cx="50" cy="38" r="5.3" fill="#fff0c8"/>
+        </svg>
+      </div>
+      <h1>GLP-1 <span class="accent">Coach</span></h1>
+      <p class="tagline">Shots, side effects, weight &mdash; read on-device by Apple Intelligence.</p>
+      <nav>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </header>
+
+    <section>
+      <h2>What it does</h2>
+      <ul>
+        <li>Log injections with 8-site rotation, dose, and notes</li>
+        <li>Track side effects, weight, protein, and water</li>
+        <li>Pull weight + nutrition from Apple Health, free</li>
+        <li>Weekly Coach Summary written on your device by Apple Intelligence</li>
+        <li>Plateau detection + prescriber prompt sheet</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Privacy first</h2>
+      <p>Nothing leaves your phone. No accounts, no cloud sync, no analytics, no ads. The AI runs entirely on your device using Apple's on-device language model.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Anulfo Acosta. GLP-1 Coach is a personal tracking and reflection tool. It is not a medical device and does not provide medical advice.</p>
+      <p>Ozempic&reg; and Wegovy&reg; are trademarks of Novo Nordisk A/S. Mounjaro&reg; and Zepbound&reg; are trademarks of Eli Lilly and Company. GLP-1 Coach is not affiliated with or endorsed by either company.</p>
+    </footer>
+  </div>
+</body>
+</html>
